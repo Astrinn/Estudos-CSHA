@@ -10,6 +10,9 @@ namespace estudo
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello Woooord!!");
+
+
         }
     }
 }
