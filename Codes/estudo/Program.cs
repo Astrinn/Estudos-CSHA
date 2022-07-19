@@ -10,7 +10,8 @@ namespace estudo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Woooord!!");
+            Console.WriteLine("Hello Woooord!!\n");
+            Console.WriteLine("Sou o mais noco programador do pedaço\n");
 
 
         }
