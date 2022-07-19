@@ -10,10 +10,12 @@ namespace estudo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Woooord!!");
-            Console.WriteLine("Sou o mais noco programador do pedaço");
+            var time = "Corinthians";
+            var musica = "rock";
 
+            Console.WriteLine($"Seu time preferido é o {time}, e vc gosta de {musica}");   
 
+            
         }
     }
 }
