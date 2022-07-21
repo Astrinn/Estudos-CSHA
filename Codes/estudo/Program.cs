@@ -6,16 +6,25 @@ using System.Threading.Tasks;
 
 namespace estudo
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            var time = "Corinthians";
-            var musica = "rock";
+            Console.WriteLine("Qual seu nome?");
+            var nome = Console.ReadLine();
+            Console.WriteLine("Qual seu time favorito?");
+            var time = Console.ReadLine();
 
-            Console.WriteLine($"Seu time preferido é o {time}, e vc gosta de {musica}");   
+            Console.WriteLine($"Seu nome é {nome}, e seu time preferido é o {time}.");
 
-            
+            Classe1 person = new Classe1();
+            person.nome = "Hiago";
+            person.dataDeNascimento = 2004;
+            person.age = 18;
+
+            person.Greeting();
+
+
         }
     }
 }
