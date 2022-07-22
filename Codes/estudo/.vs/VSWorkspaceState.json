@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\People"
   ],
-  "SelectedNode": "\\App.config",
+  "SelectedNode": "\\People\\classe1.cs",
   "PreviewInSolutionExplorer": false
 }
