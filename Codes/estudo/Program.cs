@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using estudo.aritmeticos;
+
 
 
 namespace estudo
@@ -12,13 +12,18 @@ namespace estudo
     {
         static void Main(string[] args)
         {
-            Class1 soma1 = new Class1();
-            soma1.valor1 = 2;
-            soma1.valor2 = 2;
+            if (201 <= 200) // if significa "SE"
+            {
+                Console.WriteLine("É MAIOR");
 
-            soma1.Greeting();
+            }
+            else //else significa "se não" 
+            {
+                Console.WriteLine("É MENOR");
 
+            }
 
+                Console.ReadLine();
         }
     }
 }
