@@ -12,18 +12,31 @@ namespace estudo
     {
         static void Main(string[] args)
         {
-            if (201 <= 200) // if significa "SE"
+            Console.WriteLine("Qual sua idade?");
+            int idade = int.Parse(Console.ReadLine());
+            if (idade >= 0 && idade <= 11)
             {
-                Console.WriteLine("É MAIOR");
-
+                Console.WriteLine("Vc é uma criança");
             }
-            else //else significa "se não" 
+            else if (idade >=12 && idade <=17)
             {
-                Console.WriteLine("É MENOR");
-
+                Console.WriteLine("Vc é um adolecente");    
+            }
+            else if (idade >=18 && idade <= 60)
+            {
+                Console.WriteLine("Vc é um adulto");
             }
 
-                Console.ReadLine();
+
+            else
+            {
+                Console.WriteLine("Vc é um idoso");
+            }
+
+
+
+
+            Console.ReadLine();
         }
     }
 }
