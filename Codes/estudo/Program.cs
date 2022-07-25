@@ -12,31 +12,16 @@ namespace estudo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Qual sua idade?");
-            int idade = int.Parse(Console.ReadLine());
-            if (idade >= 0 && idade <= 11)
-            {
-                Console.WriteLine("Vc é uma criança");
-            }
-            else if (idade >=12 && idade <=17)
-            {
-                Console.WriteLine("Vc é um adolecente");    
-            }
-            else if (idade >=18 && idade <= 60)
-            {
-                Console.WriteLine("Vc é um adulto");
-            }
-
-
-            else
-            {
-                Console.WriteLine("Vc é um idoso");
-            }
-
-
-
-
+            Function1(-4);
             Console.ReadLine();
         }
+
+        static void Function1(int preco)                  
+        {                                     
+            int precoAbs = Math.Abs(preco);
+            int valorFinal = precoAbs + (-1);
+            Console.WriteLine("Valor Final: "+ valorFinal);
+        }
+
     }
 }
