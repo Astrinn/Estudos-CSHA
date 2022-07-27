@@ -12,16 +12,12 @@ namespace estudo
     {
         static void Main(string[] args)
         {
-            Function1(-4);
-            Console.ReadLine();
-        }
+            string[] produtos = new string[3]
+                    {"produto1","produto2","produto3"};
+            Console.WriteLine(produtos[0]);
+            
+           
 
-        static void Function1(int preco)                  
-        {                                     
-            int precoAbs = Math.Abs(preco);
-            int valorFinal = precoAbs + (-1);
-            Console.WriteLine("Valor Final: "+ valorFinal);
         }
-
     }
 }
