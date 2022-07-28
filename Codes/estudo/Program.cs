@@ -12,12 +12,26 @@ namespace estudo
     {
         static void Main(string[] args)
         {
-            string[] produtos = new string[3]
-                    {"produto1","produto2","produto3"};
-            Console.WriteLine(produtos[0]);
-            
-           
+            string cor = "roxo";
 
+            switch (cor)
+            {
+                case "Vermelho":
+                    Console.WriteLine ("Sua cor favorita é vermelho");    
+                    break;
+                case "amarelo":
+                    Console.WriteLine("Sua cor favorita é amarelo");
+                    break;
+                case "azul":
+                    Console.WriteLine("Sua cor favorita é azul");
+                    break;
+                
+                default: Console.WriteLine("Não identificamos uma cor válida");
+                    break ;
+
+            }
+       
+            Console.ReadLine();
         }
     }
 }
