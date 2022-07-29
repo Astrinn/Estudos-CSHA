@@ -10,26 +10,17 @@ namespace estudo
 {
     public class Program
     {
+        enum Opcao { Criar = 1, Deletar = 2, Editar = 3, Listar = 4, Atualizar = 5 };
+
         static void Main(string[] args)
         {
-            string cor = "roxo";
+            Console.WriteLine("Selecione uma das opções abaixo:");
+            Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
+            int index = int.Parse(Console.ReadLine());
+            Opcao OpcaoSelecionada = (Opcao)index;
 
-            switch (cor)
-            {
-                case "Vermelho":
-                    Console.WriteLine ("Sua cor favorita é vermelho");    
-                    break;
-                case "amarelo":
-                    Console.WriteLine("Sua cor favorita é amarelo");
-                    break;
-                case "azul":
-                    Console.WriteLine("Sua cor favorita é azul");
-                    break;
-                
-                default: Console.WriteLine("Não identificamos uma cor válida");
-                    break ;
-
-            }
+            Console.WriteLine(" A opção selecionada foi " + OpcaoSelecionada );
+            
        
             Console.ReadLine();
         }
